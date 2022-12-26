@@ -1,0 +1,8 @@
+[{"id":1,"Name":"Numbers","Description":"The first exercise I made in React JS."},
+{"id":2,"Name":"Colors","Description":"Selecting multiple colors using state."},
+{"id":3,"Name":"Interval","Description":"Timers and such using hooks."},
+{"id":4,"Name":"ShoppingList","Description":"Using a state for an adjustable shopping list."},
+{"id":5,"Name":"SlotMachine","Description":"Vivamus vel nulla eget eros elementum pellentesque."},
+{"id":6,"Name":"Prodder","Description":"Donec ut mauris eget massa tempor convallis."},
+{"id":7,"Name":"Daltfresh","Description":"Mauris sit amet eros."},
+{"id":8,"Name":"Lotstring","Description":"In quis justo."}]

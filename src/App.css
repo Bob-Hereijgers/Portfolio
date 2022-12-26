@@ -1,38 +1,403 @@
-.App {
-  text-align: center;
+.grid {
+  display: grid;
+  grid-template-columns: [one] 10vw [two] 10vw [three] auto [four] 10vw [five] 10vw [end];
+  grid-template-rows: [row2] 25vw [row3] 58vw [row4] 35vw [row5] auto [end];
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*----------------------------------------------------------------------------------------------------*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.carouselItself {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.carouselBackground {
+  grid-column: one / end;
+  grid-row: row2 / row3;
+  background-image: url("./images/pexels-pixabay-235985.jpg");
+  max-width: 100%;
+}
+
+.carousel {
+  grid-column: two / five;
+  grid-row: row2 / row3;
+
+  background-image: linear-gradient(
+    to left,
+    rgba(180, 149, 105, 0.8),
+    rgba(157, 111, 75, 1)
+  );
+  border-radius: 50px;
+}
+
+.carouselDiv {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 250px;
+  height: 25vw;
+  width: auto;
+}
+
+.carouselImage {
+  max-width: max-content;
+
+  height: 25vw;
+  border-radius: 250px;
+}
+
+#casinoImage {
+  text-shadow: 1px 1px black;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.Profile {
+  grid-column: one / end;
+  grid-row: row3 / row4;
+  background-color: #800020;
+  display: grid;
+  grid-template-columns: [one] 5vw [two] 25vw [three] 10vw [four] auto [five] 10vw [six] 25vw [seven] 5vw [end];
+  grid-template-rows: [start] 4vw [row1] 4vw [row2] 4vw [row3] 6vw [row4] 4vw [row5] 6vw [row6] 4vw [row7] 6vw [row8] 4vw [row9] 10vw [row10] auto [end];
+}
+
+.ProfileTitle {
+  grid-column: four / five;
+  grid-row: row1 / row2;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ProfileImage {
+  grid-column: four / five;
+  grid-row: row3 / row6;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  max-width: fit-content;
+  max-height: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ProfileButton {
+  grid-column: four / five;
+  grid-row: row7 / row8;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-self: center;
+  background-color: #228c22;
+  font-size: x-large;
+  color: black;
+  border: crimson;
+}
+
+#Skill1 {
+  grid-column: two / three;
+  grid-row: row2 / row3;
+  display: flex;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+#Skill2 {
+  grid-column: two / three;
+  grid-row: row4 / row5;
+  display: flex;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+#Skill3 {
+  grid-column: two / three;
+  grid-row: row6 / row7;
+  display: flex;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+#Skill4 {
+  grid-column: six / seven;
+  grid-row: row2 / row3;
+  display: flex;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+#Skill5 {
+  grid-column: six / seven;
+  grid-row: row4 / row5;
+  display: flex;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+#Skill6 {
+  grid-column: six / seven;
+  grid-row: row6 / row7;
+  display: flex;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.Skill {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  padding: 10px;
+  border: 1px crimson;
+  background-color: #0e2433;
+  border-radius: 25px;
+}
+
+.Bar1 {
+  grid-column: two / three;
+  grid-row: row3 / row4;
+  margin-bottom: 100%;
+}
+
+.Bar2 {
+  grid-column: two / three;
+  grid-row: row5 / row6;
+  margin-bottom: 100%;
+}
+.Bar3 {
+  grid-column: two / three;
+  grid-row: row7 / row8;
+  margin-bottom: 100%;
+}
+.Bar4 {
+  grid-column: six / seven;
+  grid-row: row3 / row4;
+  margin-bottom: 100%;
+}
+.Bar5 {
+  grid-column: six / seven;
+  grid-row: row5 / row6;
+  margin-bottom: 100%;
+}
+
+.Bar6 {
+  grid-column: six / seven;
+  grid-row: row7 / row8;
+  margin-bottom: 100%;
+}
+
+.Description {
+  grid-column: three / six;
+  grid-row: row8 / row10;
+  border: crimson 2px solid;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #0e2433;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#Games {
+  grid-column: one / end;
+  grid-row: row4 / row5;
+  background-color: green;
+  display: grid;
+  grid-template-columns: [one] 5vw [two] 18vw [three] 12vw [four] 10vw [break] auto [break2] 10vw [five] 12vw [six] 18vw [seven] 5vw [end];
+  grid-template-rows: [start] 1vw [row1] 5vw [row2] 3vw [row3] 5vw [row4] 7vw [row5] auto [end];
+}
+
+#CompendiumTitle {
+  grid-column: three / six;
+  grid-row: row1 / row2;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#CompendiumImage {
+  grid-column: three / four;
+  grid-row: row3 / row4;
+  display: block;
+  border: black 2px solid;
+  border-radius: 25px;
+}
+
+#CompendiumDescriptionBox {
+  grid-column: break / seven;
+  grid-row: row3 / row4;
+  display: flex;
+  flex-direction: column;
+}
+
+#CompendiumDescriptionTitle {
+  grid-column: break / seven;
+  grid-row: row2 / row3;
+  margin: auto auto 0 auto;
+}
+
+#CompendiumDescription {
+  grid-column: break / seven;
+  grid-row: row3 / row4;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#CommonLocationsTitle {
+  grid-column: break / seven;
+  grid-row: row4 / row5;
+  margin: 0 auto auto auto;
+}
+
+#CommonLocations {
+  grid-column: break / seven;
+  grid-row: row4 / row5;
+  margin: auto;
+}
+
+.CompendiumText {
+  font-size: large;
+}
+
+#FavoriteText {
+  padding-top: 0.5rem;
+  margin: auto;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.Wrapper {
+  background-color: lightgreen;
+  display: flex;
+ align-items: baseline;
+}
+
+.mcuText {
+  margin-left: auto;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.NavText {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  font: 400;
+  text-decoration: none;
+  color: black;
+  border: darkslategray 2px solid;
+  border-radius: 50px;
+}
+
+#Footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.FooterText {
+  margin: auto;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.CardPage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Card {
+  width: 10vw;
+  margin: 1vw;
+}
+
+.Search {
+  display: flex;
+  background-color: lightgreen;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+#Favorite {
+  grid-column: one / end;
+  grid-row: row4 / row5;
+  background-color: green;
+  display: grid;
+  grid-template-columns: [one] 5vw [two] 18vw [three] 12vw [four] 10vw [break] auto [break2] 10vw [five] 12vw [six] 18vw [seven] 5vw [end];
+  grid-template-rows: [start] 2vw [row1] 3vw [row2] 5vw [row3] 5vw [row4] 10vw [row5];
+}
+
+#FavoriteTitle {
+  grid-column: three / six;
+  grid-row: row1 / row2;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#FavoriteImage {
+  grid-column: three / four;
+  grid-row: row2 / row4;
+  display: block;
+  border: black 2px solid;
+  border-radius: 25px;
+}
+
+#FavoriteDescriptionBox {
+  grid-column: break / seven;
+  grid-row: row3 / row4;
+  display: flex;
+  flex-direction: column;
+}
+
+#FavoriteDescriptionTitle {
+  grid-column: break / seven;
+  grid-row: row2 / row3;
+  margin: auto auto 0 auto;
+}
+
+#FavoriteDescription {
+  grid-column: break / seven;
+  grid-row: row3 / row4;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#CommonLocationsTitle {
+  grid-column: break / seven;
+  grid-row: row4 / row5;
+  margin: 0 auto auto auto;
+}
+
+#CommonLocations {
+  grid-column: break / seven;
+  grid-row: row4 / row5;
+  margin: auto auto auto auto;
+}
+
+.FavoriteText {
+  font-size: large;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.Contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.ContactContainer {
+  background-color: lightyellow;
+  padding-bottom: 1vw;
 }
