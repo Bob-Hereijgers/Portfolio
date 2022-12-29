@@ -1,14 +1,10 @@
 import { useState } from "react";
 import Card from "react-bootstrap/Card";
 import { NavLink } from "react-router-dom";
-import data from "./MOCK_DATA.json";
+import data from "./Exercise_Data.json";
 
 const CardPage = () => {
   const [inputText, setInputText] = useState("");
-  let inputHandler = (e: any) => {
-    let lowerCase = e.target.value.toLowerCase();
-    setInputText(lowerCase);
-  };
   return (
     <>
       <div className="Search">

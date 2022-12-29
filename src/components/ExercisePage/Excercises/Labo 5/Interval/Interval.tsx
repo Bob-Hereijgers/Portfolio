@@ -20,7 +20,6 @@ const Date2 = () => {
   const [Time, setTime] = useState(new Date());
 
   useEffect(() => {
-    const today = Date();
     let dateTimer = setInterval(() => {
       setTime(new Date());
     }, 1000);

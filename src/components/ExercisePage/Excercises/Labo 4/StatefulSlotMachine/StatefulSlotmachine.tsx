@@ -1,9 +1,9 @@
 import { useState } from "react";
-import cherry from "./assets/cherry.png";
-import lemon from "./assets/lemon.png";
-import melon from "./assets/melon.png";
-import prune from "./assets/prune.png";
-import seven from "./assets/seven.png";
+import cherry from "../../assets/cherry.png";
+import lemon from "../../assets/lemon.png";
+import melon from "../../assets/melon.png";
+import prune from "../../assets/prune.png";
+import seven from "../../assets/seven.png";
 
 const StatefulSlotmachine = () => {
 const [cash, setCash] = useState<number>(100);

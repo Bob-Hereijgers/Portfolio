@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { TodoItem } from "./TodoComponents/types";
-import TodoInput from "./TodoComponents/TodoInput";
-import TodoList from "./TodoComponents/TodoList";
+import { TodoItem } from "../TodoComponents/types";
+import TodoInput from "../TodoComponents/TodoInput";
+import TodoList from "../TodoComponents/TodoList";
 
 
 const Todo = () => {

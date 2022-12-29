@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from "./assets/data.json"
+import data from "../../assets/data.json"
 
 interface Student {
   name: string;

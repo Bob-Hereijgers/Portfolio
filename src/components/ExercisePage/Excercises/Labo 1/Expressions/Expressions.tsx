@@ -1,4 +1,4 @@
-const Numbers = () => {
+const App = () => {
   let random = Math.random();
   let getal1 = 6;
   let getal2 = 4;
@@ -19,4 +19,4 @@ const Numbers = () => {
   );
 }
 
-export default Numbers;
+export default App;
