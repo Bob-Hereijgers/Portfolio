@@ -1,0 +1,11 @@
+[
+  { "name": "Jacob", "age": 21, "year": 2 },
+  { "name": "Jan", "age": 20, "year": 1 },
+  { "name": "Joris", "age": 22, "year": 3 },
+  { "name": "Joris", "age": 22, "year": 3 },
+  { "name": "Korneel", "age": 23, "year": 4 },
+  { "name": "Mathias", "age": 22, "year": 3 },
+  { "name": "Muhammad", "age": 20, "year": 1 },
+  { "name": "Perneel", "age": 22, "year": 3 },
+  { "name": "Piet", "age": 21, "year": 2 }
+]

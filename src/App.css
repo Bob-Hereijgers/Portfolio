@@ -41,7 +41,7 @@
   max-width: max-content;
 
   height: 25vw;
-  border-radius: 250px;
+  border-radius: 200px;
 }
 
 #casinoImage {
@@ -54,7 +54,7 @@
 .Profile {
   grid-column: one / end;
   grid-row: row3 / row4;
-  background-color: #800020;
+  background-color: #ae85dac2;
   display: grid;
   grid-template-columns: [one] 5vw [two] 25vw [three] 10vw [four] auto [five] 10vw [six] 25vw [seven] 5vw [end];
   grid-template-rows: [start] 4vw [row1] 4vw [row2] 4vw [row3] 6vw [row4] 4vw [row5] 6vw [row6] 4vw [row7] 6vw [row8] 4vw [row9] 10vw [row10] auto [end];
@@ -65,7 +65,6 @@
   grid-row: row1 / row2;
   margin-left: auto;
   margin-right: auto;
-  color: white;
 }
 
 .ProfileImage {
@@ -85,9 +84,9 @@
   width: fit-content;
   display: flex;
   justify-self: center;
-  background-color: #228c22;
+  background-color: #4047aa;
   font-size: x-large;
-  color: black;
+  color: white;
   border: crimson;
 }
 
@@ -145,7 +144,7 @@
   font-size: large;
   padding: 10px;
   border: 1px crimson;
-  background-color: #0e2433;
+  background-color: #16364b;
   border-radius: 25px;
 }
 
@@ -190,7 +189,8 @@
   display: flex;
   flex-direction: column;
   color: white;
-  background-color: #0e2433;
+  background-color: #16364b;
+  border-radius: 15px;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
@@ -401,3 +401,4 @@
   background-color: lightyellow;
   padding-bottom: 1vw;
 }
+

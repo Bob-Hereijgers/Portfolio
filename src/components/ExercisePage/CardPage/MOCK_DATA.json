@@ -2,7 +2,8 @@
 {"id":2,"Name":"Colors","Description":"Selecting multiple colors using state."},
 {"id":3,"Name":"Interval","Description":"Timers and such using hooks."},
 {"id":4,"Name":"ShoppingList","Description":"Using a state for an adjustable shopping list."},
-{"id":5,"Name":"SlotMachine","Description":"Vivamus vel nulla eget eros elementum pellentesque."},
-{"id":6,"Name":"Prodder","Description":"Donec ut mauris eget massa tempor convallis."},
-{"id":7,"Name":"Daltfresh","Description":"Mauris sit amet eros."},
-{"id":8,"Name":"Lotstring","Description":"In quis justo."}]
+{"id":5,"Name":"SlotMachine","Description":"A slot machine made using state."},
+{"id":6,"Name":"Filtering","Description":"Filtering an array using state."},
+{"id":7,"Name":"Pokemon","Description":"UseEffect hooks to use an api which is then filtered upon."},
+{"id":8,"Name":"Todo","Description":"In quis justo."},
+{"id":9,"Name":"Pokemans","Description":"In quis justo."}]

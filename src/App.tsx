@@ -11,6 +11,9 @@ import Colors from "./components/ExercisePage/Excercises/Colors";
 import Interval from "./components/ExercisePage/Excercises/Interval";
 import ShoppingList from "./components/ExercisePage/Excercises/ShoppingList";
 import StatefulSlotmachine from "./components/ExercisePage/Excercises/StatefulSlotmachine";
+import Filtering from "./components/ExercisePage/Excercises/Filtering";
+import Pokemon from "./components/ExercisePage/Excercises/Pokemon";
+import Todo from "./components/ExercisePage/Excercises/Todo";
 
 const PageNotFound = () => {
   return <h1>Page Not Found</h1>;
@@ -57,6 +60,18 @@ const App = () => {
         {
           path: "Exercise/SlotMachine",
           element: <StatefulSlotmachine />,
+        },
+        {
+          path: "Exercise/Filtering",
+          element: <Filtering />,
+        },
+        {
+          path: "Exercise/Pokemon",
+          element: <Pokemon />,
+        },
+        {
+          path: "Exercise/Todo",
+          element: <Todo />,
         },
         {
           path: "*",

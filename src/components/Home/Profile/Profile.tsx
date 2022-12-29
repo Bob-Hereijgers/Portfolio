@@ -19,8 +19,6 @@ const Profile = () => {
   let Skill6 = "Detail Oriented";
   let button = "General Qualities";
 
-  let x = true;
-
   if (bars === false) {
     bar1 = 45;
     Skill1 = "French";
@@ -76,14 +74,14 @@ const Profile = () => {
         {button}
       </button>
       <div className="Description">
-        <h2>Profile Text</h2>
+        <h2>About me:</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-          consectetur posuere fermentum. Integer porttitor sagittis dui ut
-          fringilla. Nam a augue ornare, feugiat nisl a, sagittis purus. Mauris
-          eu quam ac mi luctus bibendum. Pellentesque tincidunt a felis eget
-          iaculis. Maecenas sed pellentesque dui. In semper est ultrices posuere
-          vulputate.
+          My name is Bob Hereijgers, and I am a student in a programming
+          graduate, at the AP Hogeschool in Antwerp. I chose this study path
+          because I am interested in developing and designing video games one
+          day. But before that I would like to spend my time learning to design
+          websites like this one. I still have lots of room to grow and hope to
+          work with many great people.
         </p>
       </div>
     </div>
