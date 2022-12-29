@@ -20,13 +20,17 @@ import ColorPicker from "./components/ExercisePage/Excercises/Labo 3/ColorPicker
 import Contact from "./components/ExercisePage/Excercises/Labo 3/Contact/Contact";
 //Labo 3
 import Colors from "./components/ExercisePage/Excercises/Labo 4/Colors/Colors";
-import Interval from "./components/ExercisePage/Excercises/Labo 5/Interval/Interval";
+import CounterList from "./components/ExercisePage/Excercises/Labo 4/CounterList/CounterList";
+import Filtering from "./components/ExercisePage/Excercises/Labo 4/Filtering/Filtering";
 import ShoppingList from "./components/ExercisePage/Excercises/Labo 4/ShoppingList/ShoppingList";
 import StatefulSlotmachine from "./components/ExercisePage/Excercises/Labo 4/StatefulSlotMachine/StatefulSlotmachine";
-import Filtering from "./components/ExercisePage/Excercises/Labo 4/Filtering/Filtering";
+//Labo 4
+import Interval from "./components/ExercisePage/Excercises/Labo 5/Interval/Interval";
 import Pokemon from "./components/ExercisePage/Excercises/Labo 5/Pokemon/Pokemon";
+//Labo 5
 import Todo from "./components/ExercisePage/Excercises/Labo 6/Todo/Todo";
-import CounterList from "./components/ExercisePage/Excercises/Labo 4/CounterList/CounterList";
+//Labo 6
+
 
 
 //Exercises
