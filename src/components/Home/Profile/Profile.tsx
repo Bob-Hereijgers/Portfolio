@@ -1,4 +1,4 @@
-import Pfp from "../../../images/sheev.png";
+import Pfp from "../../../images/20221102_161117.jpg";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { useState } from "react";
 

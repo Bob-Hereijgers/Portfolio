@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import Cat from "../../../images/Pikachu.png";
+import pikachu from "../../../images/Pikachu.png";
 import colors from "../../../images/pexels-pixabay-40799.jpg"
 import casino from "../../../images/pexels-darya-sannikova-3021120.jpg"
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,7 +11,7 @@ const CarouselProjects = () => {
       <Carousel.Item>
         <div className="carouselDiv">
           <NavLink to="/Exercise/Pokemon">
-            <img src={Cat} alt="Pikachu" className="carouselImage" />
+            <img src={pikachu} alt="Pikachu" className="carouselImage" />
           </NavLink>
         </div>
         <Carousel.Caption>
