@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { RotatingTriangles } from "react-loader-spinner";
 import Compendium from "../Home/Games/Compendium";
 
 const FavoritesPage = () => {
   const [hyruleCompendium, setHyruleCompendium] = useState<Compendium>();
-  const [favorite, setFavorite] = useState<string>(
+  const [favorite] = useState<string>(
     localStorage.getItem("favorite") ?? ""
   );
   useEffect(() => {
