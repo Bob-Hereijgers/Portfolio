@@ -198,7 +198,7 @@
 #Games {
   grid-column: one / end;
   grid-row: row4 / row5;
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.666);
   display: grid;
   grid-template-columns: [one] 5vw [two] 18vw [three] 12vw [four] 10vw [break] auto [break2] 10vw [five] 12vw [six] 18vw [seven] 5vw [end];
   grid-template-rows: [start] 1vw [row1] 5vw [row2] 3vw [row3] 5vw [row4] 7vw [row5] auto [end];
@@ -264,6 +264,12 @@
   margin: auto;
 }
 
+.GameLoading {
+  margin: auto;
+  grid-column: three / four;
+  grid-row: row4 / row5;
+}
+
 /*----------------------------------------------------------------------------------------------------*/
 
 .Wrapper {
@@ -305,6 +311,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: lightyellow;
 }
 
 .Card {
@@ -324,7 +331,7 @@
 #Favorite {
   grid-column: one / end;
   grid-row: row4 / row5;
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.666);
   display: grid;
   grid-template-columns: [one] 5vw [two] 18vw [three] 12vw [four] 10vw [break] auto [break2] 10vw [five] 12vw [six] 18vw [seven] 5vw [end];
   grid-template-rows: [start] 2vw [row1] 3vw [row2] 5vw [row3] 5vw [row4] 10vw [row5];
@@ -384,6 +391,15 @@
 .FavoriteText {
   font-size: large;
 }
+
+.NoFavorite {
+  display: flex;
+  padding: 5vw;
+  background-color: rgba(0, 128, 0, 0.666);
+  margin: auto;
+  justify-content: center;
+}
+
 
 /*----------------------------------------------------------------------------------------------------*/
 

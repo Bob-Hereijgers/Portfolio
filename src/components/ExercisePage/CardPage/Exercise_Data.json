@@ -13,6 +13,6 @@
 {"id":13,"Name":"Facebook","Description":"Replica facebook profile."},
 {"id":14,"Name":"InputFields","Description":"stateful input fields"},
 {"id":15,"Name":"CheckBox","Description":"Simple check box."},
-{"id":16,"Name":"UpDown","Description":"Simple counter."},
-{"id":17,"Name":"Loading","Description":"Loading indicator."},
+{"id":16,"Name":"UpDown","Description":"Simple counters."},
+{"id":17,"Name":"Loading","Description":"React Loading indicator test."},
 {"id":18,"Name":"ColorPicker","Description":"Simple color picker."}]
