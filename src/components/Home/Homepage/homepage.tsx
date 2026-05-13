@@ -14,8 +14,8 @@ const Homepage: React.FC = () => {
             with my strong work ethic, problem-solving skills, and passion for clean code.
           </p>
           <div className="hero-cta">
-            <a href="#experience" className="btn btn-primary">View My Work</a>
-            <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+            <a href="experiences" className="btn btn-secondary">View My Work</a>
+            <a href="https://www.linkedin.com/in/bob-hereijgers" className="btn btn-secondary">Get In Touch</a>
           </div>
         </div>
       </section>
