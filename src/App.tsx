@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./components/Base Components/Root/Root";
 import HomePage from "./components/Home/Homepage/homepage";
-//import ExperiencePage from "./components/ExperiencePage/ExperiencePage";
+import ExperiencePage from "./components/ExperiencePage/ExperiencePage";
 //import SkillsPage from "./components/SkillsPage/SkillsPage";
 import ContactPage from "./components/Contact Page/ContactPage";
 //import HobbiesPage from "./components/HobbiesPage/HobbiesPage";
@@ -20,10 +20,10 @@ const App = () => {
           path: "",
           element: <HomePage />,
         },
-        /*{
+        {
           path: "experience",
           element: <ExperiencePage />,
-        },*/
+        },
         /*{
           path: "skills",
           element: <SkillsPage />,
