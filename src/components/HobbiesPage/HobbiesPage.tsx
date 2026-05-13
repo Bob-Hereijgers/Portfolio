@@ -23,33 +23,49 @@ const HobbiesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Hobby 2 - Fitness & Training */}
-      <section className="hobby-section section-fitness">
+      {/* Hobby 2 - Pathfinder 2e */}
+      <section className="hobby-section section-pathfinder">
+        <div className="section-overlay-pathfinder"></div>
         <div className="section-content">
-          <div className="hobby-icon">🏋️</div>
-          <h2 className="hobby-title">Fitness & Training</h2>
+          <div className="hobby-icon">📜✒️</div>
+          <h2 className="hobby-title">Pathfinder 2e</h2>
           <div className="hobby-text">
             <p>
-              Staying active is essential for both physical and mental well-being. I maintain a consistent 
-              workout routine that includes strength training, cardio, and calisthenics. Fitness has taught 
-              me discipline, consistency, and goal-setting—qualities that translate directly to my professional 
-              life. I believe in the philosophy of continuous improvement, whether in the gym or at my desk.
+              I deeply enjoy acting and roleplaying different characters with my friends, exploring aspects 
+              of myself I'd never thought about before. I also love the intricate combat scenarios that 
+              require careful planning, teamwork, and communication.
+            </p>
+            <p>
+              I prefer Pathfinder 2e over the more common Dungeons &amp; Dragons because of the additional 
+              options and rules. It makes it a more rules-heavy system in exchange for more freedom in 
+              between said rules. It also clears up confusion when conflicts arise since most situations 
+              have clear guidelines to follow.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Hobby 3 - Reading & Learning */}
-      <section className="hobby-section section-learning">
+      {/* Hobby 3 - Collecting Trinkets */}
+      <section className="hobby-section section-collecting">
+        <div className="section-overlay-collecting"></div>
         <div className="section-content">
-          <div className="hobby-icon">📚</div>
-          <h2 className="hobby-title">Reading & Learning</h2>
+          <div className="hobby-icon">✨🗿</div>
+          <h2 className="hobby-title">Collecting Trinkets</h2>
           <div className="hobby-text">
             <p>
-              I'm an avid reader with a focus on technology, personal development, and science fiction. 
-              I believe in lifelong learning and constantly seek new knowledge through books, online courses, 
-              and tech blogs. Currently, I'm exploring topics like artificial intelligence, system design, 
-              and leadership. Some of my favorite authors include Yuval Noah Harari, Andy Weir, and Robert C. Martin.
+              I love collecting weird little things, especially ones with emotional value. 
+              Most of my trinkets come from games, movies, and shows—little pieces of 
+              fictional worlds that I can hold in my hands.
+            </p>
+            <p>
+              My collection also includes various books and board games, each one representing 
+              a story I've loved, an adventure I've shared with friends, or a world I never 
+              wanted to leave. Every item on my shelf has a memory attached to it.
+            </p>
+            <p>
+              Monetary value doesn't matter but the joy of finding something that 
+              resonates with you and keeping it close can't be matched. A small reminder of the things that 
+              make you happy.
             </p>
           </div>
         </div>

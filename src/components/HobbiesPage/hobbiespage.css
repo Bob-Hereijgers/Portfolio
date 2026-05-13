@@ -1,7 +1,6 @@
 /* hobbiespage.css */
-/* Hobbies Page - Full Screen Sections with Background Image */
+/* Hobbies Page - Full Screen Sections with Background Images */
 
-/* Remove the nested scrollbar - let the main page handle scrolling */
 .hobbies-page {
   width: 100%;
   background-color: #0f172a;
@@ -18,24 +17,18 @@
   overflow: hidden;
 }
 
-/* Xenoblade Section with Background Image */
+/* ============================================ */
+/* Xenoblade Section with Sky Background */
+/* ============================================ */
 .section-gaming {
   position: relative;
   background-image: url('/src/assets/pexels-donaldtong94-139366.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Parallax effect */
+  background-attachment: fixed;
 }
 
-/* For better performance on mobile, remove fixed attachment */
-@media (max-width: 768px) {
-  .section-gaming {
-    background-attachment: scroll;
-  }
-}
-
-/* Dark overlay to ensure text readability */
 .section-overlay {
   position: absolute;
   top: 0;
@@ -46,39 +39,53 @@
   z-index: 1;
 }
 
-/* Fitness Section Background */
-.section-fitness {
-  background: linear-gradient(135deg, #0f172a 0%, #1a2e1a 100%);
+/* ============================================ */
+/* Pathfinder Section with Library Background */
+/* ============================================ */
+.section-pathfinder {
   position: relative;
+  background-image: url('/src/assets/pexels-juan-de-dironne-2152908323-34938231.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.section-fitness::before {
-  content: '🏋️';
+.section-overlay-pathfinder {
   position: absolute;
-  font-size: 20rem;
-  opacity: 0.03;
-  bottom: -5rem;
-  right: -5rem;
-  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
 }
 
-/* Learning Section Background */
-.section-learning {
-  background: linear-gradient(135deg, #0f172a 0%, #1e2a3a 100%);
+/* ============================================ */
+/* Collecting Section with Collection Background */
+/* ============================================ */
+.section-collecting {
   position: relative;
+  background-image: url('/src/assets/pexels-sergio-aguirre-311041047-13538872.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.section-learning::before {
-  content: '📚';
+.section-overlay-collecting {
   position: absolute;
-  font-size: 20rem;
-  opacity: 0.03;
-  bottom: -5rem;
-  right: -5rem;
-  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
+/* ============================================ */
 /* Section Content */
+/* ============================================ */
 .section-content {
   max-width: 800px;
   margin: 0 auto;
@@ -119,7 +126,13 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Optional: Add a subtle gradient overlay to the gaming section for better text contrast */
+.hobby-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================ */
+/* Gradient Overlays for Text Contrast */
+/* ============================================ */
 .section-gaming::after {
   content: '';
   position: absolute;
@@ -132,7 +145,33 @@
   z-index: 1;
 }
 
+.section-pathfinder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.section-collecting::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ============================================ */
 /* Animations */
+/* ============================================ */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -153,8 +192,16 @@
   }
 }
 
-/* Responsive Design */
+/* ============================================ */
+/* Mobile Optimization */
+/* ============================================ */
 @media (max-width: 768px) {
+  .section-gaming,
+  .section-pathfinder,
+  .section-collecting {
+    background-attachment: scroll;
+  }
+
   .section-content {
     padding: 2rem 1.5rem;
   }
@@ -166,13 +213,6 @@
 
   .hobby-text p {
     font-size: 1rem;
-  }
-
-  .section-fitness::before,
-  .section-learning::before {
-    font-size: 12rem;
-    bottom: -3rem;
-    right: -3rem;
   }
 }
 
@@ -192,10 +232,5 @@
 
   .hobby-text p {
     font-size: 0.875rem;
-  }
-
-  .section-fitness::before,
-  .section-learning::before {
-    font-size: 8rem;
   }
 }
