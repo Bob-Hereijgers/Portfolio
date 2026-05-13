@@ -21,11 +21,11 @@ const Bar: React.FC<BarProps> = () => {
               <NavLink className="nav-text" to="/">
                 Home
               </NavLink>
-              <NavLink className="nav-text" to="ExerciseGallery">
-                Exercise Gallery
+              <NavLink className="nav-text" to="Experiences">
+                Experiences
               </NavLink>
               <NavLink className="nav-text" to="Contact">
-                Contact Us
+                Contact Me
               </NavLink>
               <NavLink className="nav-text" to="Favorites">
                 Favorites
