@@ -24,10 +24,10 @@ const App = () => {
           path: "experiences",
           element: <ExperiencePage />,
         },
-        /*{
+        {
           path: "skills",
           element: <SkillsPage />,
-        },*/
+        },
        {
           path: "hobbies",
           element: <HobbiesPage />,

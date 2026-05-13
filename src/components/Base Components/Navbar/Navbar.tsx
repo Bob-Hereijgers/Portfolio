@@ -27,6 +27,9 @@ const Bar: React.FC<BarProps> = () => {
               <NavLink className="nav-text" to="Hobbies">
                 Hobbies
               </NavLink>
+              <NavLink className="nav-text" to="Skills">
+                Skills
+              </NavLink>
               <NavLink className="nav-text" to="Contact">
                 Contact Me
               </NavLink>
