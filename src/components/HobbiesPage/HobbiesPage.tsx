@@ -17,12 +17,6 @@ const HobbiesPage: React.FC = () => {
               I also enjoy analyzing game design mechanics and UI/UX elements that make games engaging.
             </p>
           </div>
-          <div className="scroll-indicator">
-            <span>Scroll down</span>
-            <svg className="scroll-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
         </div>
       </section>
 
@@ -38,12 +32,6 @@ const HobbiesPage: React.FC = () => {
               me discipline, consistency, and goal-setting—qualities that translate directly to my professional 
               life. I believe in the philosophy of continuous improvement, whether in the gym or at my desk.
             </p>
-          </div>
-          <div className="scroll-indicator">
-            <span>Scroll down</span>
-            <svg className="scroll-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
           </div>
         </div>
       </section>
@@ -61,7 +49,6 @@ const HobbiesPage: React.FC = () => {
               and leadership. Some of my favorite authors include Yuval Noah Harari, Andy Weir, and Robert C. Martin.
             </p>
           </div>
-          {/* No scroll indicator on last section */}
         </div>
       </section>
     </div>

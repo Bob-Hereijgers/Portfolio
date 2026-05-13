@@ -1,24 +1,16 @@
 /* hobbiespage.css */
-/* Hobbies Page - Full Screen Vertical Sections */
+/* Hobbies Page - Full Screen Sections with Main Page Scroll */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Remove the nested scrollbar - let the main page handle scrolling */
 .hobbies-page {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  width: 100%;
+  background-color: #0f172a;
 }
 
 /* Each section takes full viewport height */
 .hobby-section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +22,7 @@
 .section-content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
   text-align: center;
   animation: fadeInUp 0.8s ease-out;
   z-index: 2;
@@ -63,34 +55,6 @@
   line-height: 1.8;
   color: #e2e8f0;
   margin-bottom: 1rem;
-}
-
-/* Scroll Indicator */
-.scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  color: #94a3b8;
-  font-size: 0.875rem;
-  animation: fadeInUp 1s ease-out 0.5s both;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  z-index: 2;
-}
-
-.scroll-indicator:hover {
-  color: #60a5fa;
-}
-
-.scroll-arrow {
-  width: 20px;
-  height: 20px;
-  animation: bounce 1.5s ease-in-out infinite;
 }
 
 /* Background Colors for Each Section */
@@ -147,7 +111,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
   pointer-events: none;
 }
 
@@ -172,29 +136,15 @@
   }
 }
 
-/* Hide scroll indicator on last section */
-.hobby-section:last-child .scroll-indicator {
-  display: none;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .section-content {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .hobby-icon {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
-  }
-
-  .scroll-indicator {
-    bottom: 1.5rem;
-  }
-
-  .scroll-arrow {
-    width: 16px;
-    height: 16px;
   }
 
   .hobby-section::before {
@@ -205,43 +155,16 @@
 }
 
 @media (max-width: 480px) {
+  .section-content {
+    padding: 1.5rem;
+  }
+
   .hobby-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
 
-  .scroll-indicator span {
-    font-size: 0.75rem;
-  }
-
-  .scroll-indicator {
-    bottom: 1rem;
-  }
-
   .hobby-section::before {
     font-size: 8rem;
   }
-}
-
-/* Optional: Custom scrollbar */
-.hobbies-page::-webkit-scrollbar {
-  width: 8px;
-}
-
-.hobbies-page::-webkit-scrollbar-track {
-  background: #1e293b;
-}
-
-.hobbies-page::-webkit-scrollbar-thumb {
-  background: #60a5fa;
-  border-radius: 4px;
-}
-
-.hobbies-page::-webkit-scrollbar-thumb:hover {
-  background: #a78bfa;
-}
-
-/* Smooth transitions */
-.hobby-section {
-  transition: background 0.3s ease;
 }
