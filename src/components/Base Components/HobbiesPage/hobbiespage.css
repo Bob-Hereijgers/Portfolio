@@ -1,0 +1,235 @@
+/* hobbiespage.css */
+/* Hobbies Page Styling */
+
+.hobbies-page {
+  min-height: 100vh;
+  padding: 1rem 2rem 2rem 2rem;
+  background-color: #0f172a;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  margin: 0 0 4rem 0;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-header p {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: #cbd5e1;
+  font-weight: 300;
+}
+
+/* Hobbies Container */
+.hobbies-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Hobby Cards */
+.hobby-card {
+  background: #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #334155;
+  transition: all 0.3s ease;
+  animation: slideIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.hobby-card:nth-child(1) { animation-delay: 0.1s; }
+.hobby-card:nth-child(2) { animation-delay: 0.2s; }
+.hobby-card:nth-child(3) { animation-delay: 0.3s; }
+
+.hobby-card:hover {
+  transform: translateY(-8px);
+  border-color: #60a5fa;
+  box-shadow: 0 12px 24px rgba(96, 165, 250, 0.15);
+  background: #1e293b;
+}
+
+/* Hobby Icon */
+.hobby-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.hobby-card:hover .hobby-icon {
+  transform: scale(1.1);
+}
+
+/* Hobby Title */
+.hobby-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #f1f5f9;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.hobby-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.hobby-card:hover .hobby-title::after {
+  width: 80px;
+}
+
+/* Hobby Content */
+.hobby-content {
+  margin-top: 1.5rem;
+}
+
+.hobby-text {
+  color: #cbd5e1;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hobbies-page {
+    padding: 1rem;
+  }
+
+  .page-header {
+    margin: 0 0 2rem 0;
+  }
+
+  .hobbies-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .hobby-card {
+    padding: 1.5rem;
+  }
+
+  .hobby-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hobby-title {
+    font-size: 1.5rem;
+  }
+
+  .hobby-text {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .hobbies-page {
+    padding: 0.75rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .page-header p {
+    font-size: 0.875rem;
+  }
+
+  .hobby-card {
+    padding: 1.25rem;
+  }
+
+  .hobby-icon {
+    font-size: 2rem;
+  }
+
+  .hobby-title {
+    font-size: 1.25rem;
+  }
+
+  .hobby-text {
+    font-size: 0.875rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Add a subtle gradient border effect */
+.hobby-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.hobby-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa, #60a5fa);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.hobby-card:hover::before {
+  transform: translateX(0);
+}

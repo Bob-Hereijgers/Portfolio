@@ -4,7 +4,7 @@ import HomePage from "./components/Home/Homepage/homepage";
 import ExperiencePage from "./components/ExperiencePage/ExperiencePage";
 //import SkillsPage from "./components/SkillsPage/SkillsPage";
 import ContactPage from "./components/Contact Page/ContactPage";
-//import HobbiesPage from "./components/HobbiesPage/HobbiesPage";
+import HobbiesPage from "./components/HobbiesPage/HobbiesPage";
 
 const PageNotFound = () => {
   return <h1>Page Not Found</h1>;
@@ -28,14 +28,15 @@ const App = () => {
           path: "skills",
           element: <SkillsPage />,
         },*/
+       {
+          path: "hobbies",
+          element: <HobbiesPage />,
+        },
         {
           path: "contact",
           element: <ContactPage />,
         },
-       /* {
-          path: "hobbies",
-          element: <HobbiesPage />,
-        },*/
+
         {
           path: "*",
           element: <PageNotFound />,
