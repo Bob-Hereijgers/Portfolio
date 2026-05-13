@@ -6,13 +6,14 @@ const Homepage: React.FC = () => {
     <div className="homepage">
       <section className="hero">
         <div className="hero-content">
-          <h1 className="hero-title">Bob Hereijgers</h1>
+          <h1 className="hero-title">Quinn Hereijgers</h1>
           <p className="hero-subtitle">Software Developer</p>
           <p className="hero-description">
-            A motivated and detail-oriented recent graduate with a degree in Programming. 
-            I specialize in front-end development and am eager to contribute to innovative projects 
-            with my strong work ethic, problem-solving skills, and passion for clean code.
-          </p>
+Hi! I'm Quinn (you can call me Bob). I'm a software developer who fell in love with coding because it combines creativity, logic, and problem-solving—three things I genuinely enjoy.
+I recently graduated with a degree in Programming and completed an internship at Mediahuis nv, where I built internal documentation tools and AI evaluation platforms. When I'm not coding, you'll find me gaming, working out, or reading about emerging technologies.
+This site showcases my skills, professional journey, projects, and personal interests. I'm always looking to connect with people who share a passion for technology and continuous growth.
+Feel free to reach out, I'd love to chat about tech, collaborate on projects, or just say hello!
+</p>
           <div className="hero-cta">
             <a href="experiences" className="btn btn-secondary">View My Work</a>
             <a href="https://www.linkedin.com/in/bob-hereijgers" className="btn btn-secondary">Get In Touch</a>

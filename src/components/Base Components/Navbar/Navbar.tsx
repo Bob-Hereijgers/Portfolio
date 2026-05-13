@@ -14,7 +14,7 @@ const Bar: React.FC<BarProps> = () => {
     <div className="wrapper">
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand>My Portfolio</Navbar.Brand>
+          <Navbar.Brand>Quinn Hereijgers</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="nav-bar">
