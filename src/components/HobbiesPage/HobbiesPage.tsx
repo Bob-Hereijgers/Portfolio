@@ -4,17 +4,20 @@ import "./hobbiespage.css";
 const HobbiesPage: React.FC = () => {
   return (
     <div className="hobbies-page">
-      {/* Hobby 1 - Gaming */}
+      {/* Hobby 1 - Xenoblade Chronicles */}
       <section className="hobby-section section-gaming">
+        <div className="section-overlay"></div>
         <div className="section-content">
           <div className="hobby-icon">🎮</div>
-          <h2 className="hobby-title">Gaming</h2>
+          <h2 className="hobby-title">Xenoblade Chronicles</h2>
           <div className="hobby-text">
             <p>
-              I'm passionate about video games, from immersive open-world RPGs to competitive shooters. 
-              Gaming has taught me strategic thinking, problem-solving under pressure, and the importance 
-              of teamwork. Some of my favorites include The Legend of Zelda series, Elden Ring, and Valorant.
-              I also enjoy analyzing game design mechanics and UI/UX elements that make games engaging.
+              I love games, especially ones that tell interesting stories and have intricate characters. 
+              From the opening notes of the title theme to the final lines spoken, this game grabbed my 
+              attention and never let go. It talks about the cycle of revenge, standing for what's right 
+              even in the face of adversity, that we shape our own destinies, and that the world we 
+              inherited from our ancestors is precious and we should leave it better than we found it 
+              for our descendants. And this is all from just one game in a series of 4 so far.
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 /* hobbiespage.css */
-/* Hobbies Page - Full Screen Sections with Main Page Scroll */
+/* Hobbies Page - Full Screen Sections with Background Image */
 
 /* Remove the nested scrollbar - let the main page handle scrolling */
 .hobbies-page {
@@ -18,6 +18,66 @@
   overflow: hidden;
 }
 
+/* Xenoblade Section with Background Image */
+.section-gaming {
+  position: relative;
+  background-image: url('/src/assets/pexels-donaldtong94-139366.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Parallax effect */
+}
+
+/* For better performance on mobile, remove fixed attachment */
+@media (max-width: 768px) {
+  .section-gaming {
+    background-attachment: scroll;
+  }
+}
+
+/* Dark overlay to ensure text readability */
+.section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Fitness Section Background */
+.section-fitness {
+  background: linear-gradient(135deg, #0f172a 0%, #1a2e1a 100%);
+  position: relative;
+}
+
+.section-fitness::before {
+  content: '🏋️';
+  position: absolute;
+  font-size: 20rem;
+  opacity: 0.03;
+  bottom: -5rem;
+  right: -5rem;
+  pointer-events: none;
+}
+
+/* Learning Section Background */
+.section-learning {
+  background: linear-gradient(135deg, #0f172a 0%, #1e2a3a 100%);
+  position: relative;
+}
+
+.section-learning::before {
+  content: '📚';
+  position: absolute;
+  font-size: 20rem;
+  opacity: 0.03;
+  bottom: -5rem;
+  right: -5rem;
+  pointer-events: none;
+}
+
 /* Section Content */
 .section-content {
   max-width: 800px;
@@ -26,6 +86,7 @@
   text-align: center;
   animation: fadeInUp 0.8s ease-out;
   z-index: 2;
+  position: relative;
 }
 
 /* Hobby Icon */
@@ -53,66 +114,22 @@
 .hobby-text p {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   line-height: 1.8;
-  color: #e2e8f0;
+  color: #f1f5f9;
   margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Background Colors for Each Section */
-.section-gaming {
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
-  position: relative;
-}
-
-.section-gaming::before {
-  content: '🎮';
-  position: absolute;
-  font-size: 20rem;
-  opacity: 0.03;
-  bottom: -5rem;
-  right: -5rem;
-  pointer-events: none;
-}
-
-.section-fitness {
-  background: linear-gradient(135deg, #0f172a 0%, #1a2e1a 100%);
-  position: relative;
-}
-
-.section-fitness::before {
-  content: '🏋️';
-  position: absolute;
-  font-size: 20rem;
-  opacity: 0.03;
-  bottom: -5rem;
-  right: -5rem;
-  pointer-events: none;
-}
-
-.section-learning {
-  background: linear-gradient(135deg, #0f172a 0%, #1e2a3a 100%);
-  position: relative;
-}
-
-.section-learning::before {
-  content: '📚';
-  position: absolute;
-  font-size: 20rem;
-  opacity: 0.03;
-  bottom: -5rem;
-  right: -5rem;
-  pointer-events: none;
-}
-
-/* Optional: Add a subtle gradient overlay */
-.hobby-section::after {
+/* Optional: Add a subtle gradient overlay to the gaming section for better text contrast */
+.section-gaming::after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
   pointer-events: none;
+  z-index: 1;
 }
 
 /* Animations */
@@ -147,7 +164,12 @@
     margin-bottom: 1.5rem;
   }
 
-  .hobby-section::before {
+  .hobby-text p {
+    font-size: 1rem;
+  }
+
+  .section-fitness::before,
+  .section-learning::before {
     font-size: 12rem;
     bottom: -3rem;
     right: -3rem;
@@ -164,7 +186,16 @@
     margin-bottom: 1rem;
   }
 
-  .hobby-section::before {
+  .hobby-title {
+    font-size: 1.75rem;
+  }
+
+  .hobby-text p {
+    font-size: 0.875rem;
+  }
+
+  .section-fitness::before,
+  .section-learning::before {
     font-size: 8rem;
   }
 }
