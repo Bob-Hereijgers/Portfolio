@@ -9,7 +9,7 @@ const Homepage: React.FC = () => {
           <h1 className="hero-title">Quinn Hereijgers</h1>
           <p className="hero-subtitle">Software Developer</p>
           <p className="hero-description">
-Hi! I'm Quinn (you can call me Bob). I'm a software developer who fell in love with coding because it combines creativity, logic, and problem-solving—three things I genuinely enjoy.
+Hi! I'm Quinn (legal name Bob). I'm a software developer who fell in love with coding because it combines creativity, logic, and problem-solving—three things I genuinely enjoy.
 I recently graduated with a degree in Programming and completed an internship at Mediahuis nv, where I built internal documentation tools and AI evaluation platforms. When I'm not coding, you'll find me gaming, working out, or reading about emerging technologies.
 This site showcases my skills, professional journey, projects, and personal interests. I'm always looking to connect with people who share a passion for technology and continuous growth.
 Feel free to reach out, I'd love to chat about tech, collaborate on projects, or just say hello!
