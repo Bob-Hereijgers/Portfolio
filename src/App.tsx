@@ -21,7 +21,7 @@ const App = () => {
           element: <HomePage />,
         },
         {
-          path: "experience",
+          path: "experiences",
           element: <ExperiencePage />,
         },
         /*{
