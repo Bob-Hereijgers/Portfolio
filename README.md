@@ -1,46 +1,156 @@
-# Getting Started with Create React App
+# Bob Hereijgers - Professional Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, professional portfolio website showcasing my software development skills, experience, and education.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- **Modern Design**: Clean, contemporary UI with gradient accents and smooth animations
+- **Responsive Layout**: Fully optimized for mobile, tablet, and desktop devices
+- **Professional Sections**:
+  - Home: Eye-catching hero section with professional introduction
+  - Experience: Timeline view of work experience and education
+  - Skills: Display of technical skills, languages, and soft skills
+  - Contact: Get in touch information
+  - Hobbies: Personal interests (expandable section)
 
-### `npm start`
+## 🚀 Quick Start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repository:
+```bash
+git clone https://github.com/Bob-Hereijgers/Portfolio.git
+cd Portfolio
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+3. Start the development server:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application will open at [http://localhost:3000](http://localhost:3000)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/
+│   ├── Home/
+│   │   └── homepage/
+│   │       ├── homepage.tsx
+│   │       └── homepage.css
+│   ├── ExperiencePage/
+│   │   ├── ExperiencePage.tsx
+│   │   └── experience.css
+│   ├── SkillsPage/
+│   │   ├── SkillsPage.tsx
+│   │   └── skills.css
+│   ├── HobbiesPage/
+│   │   ├── HobbiesPage.tsx
+│   │   └── hobbies.css
+│   ├── Contact Page/
+│   ├── Base Components/
+│   │   ├── Root/
+│   │   ├── Navbar/
+│   │   └── Footer/
+│   └── images/
+├── App.tsx
+├── App.css
+├── index.tsx
+├── index.css
+└── react-app-env.d.ts
+```
 
-### `npm run eject`
+## 🛠️ Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Frontend Framework**: React 18
+- **Language**: TypeScript
+- **Routing**: React Router v6
+- **Styling**: CSS3 with modern features (gradients, animations)
+- **Build Tool**: Create React App
+- **Email**: EmailJS (for contact forms)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📄 Available Scripts
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Development
+```bash
+npm start
+```
+Runs the app in development mode with hot reload.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Production Build
+```bash
+npm run build
+```
+Builds the app for production to the `build` folder.
 
-## Learn More
+### Testing
+```bash
+npm test
+```
+Launches the test runner in interactive watch mode.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎨 Design Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Color Scheme**: Dark theme with blue accent colors
+- **Animations**: Smooth transitions, fade-in effects, hover states
+- **Typography**: Professional typography with clear hierarchy
+- **Responsive**: Mobile-first approach with breakpoints for all screen sizes
+- **Accessibility**: Semantic HTML and keyboard-friendly navigation
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+
+1. Install Vercel CLI:
+```bash
+npm i -g vercel
+```
+
+2. Deploy:
+```bash
+vercel
+```
+
+### Other Platforms
+
+The `build` folder can be deployed to any static hosting service:
+- GitHub Pages
+- Netlify
+- Firebase Hosting
+- AWS S3
+
+## 📧 Contact Information
+
+- **Email**: [Your email here]
+- **LinkedIn**: [Your profile]
+- **GitHub**: [Your profile]
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- Created with React and TypeScript
+- Inspired by modern portfolio design trends
+- Built for showcasing professional development skills
+
+---
+
+**Last Updated**: May 2026
