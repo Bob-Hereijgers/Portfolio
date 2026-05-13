@@ -1,195 +1,157 @@
 /* hobbiespage.css */
-/* Hobbies Page Styling */
+/* Hobbies Page - Full Screen Vertical Sections */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .hobbies-page {
-  min-height: 100vh;
-  padding: 1rem 2rem 2rem 2rem;
-  background-color: #0f172a;
-  animation: fadeIn 0.6s ease-out;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
-/* Page Header */
-.page-header {
+/* Each section takes full viewport height */
+.hobby-section {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Section Content */
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  margin: 0 0 4rem 0;
   animation: fadeInUp 0.8s ease-out;
+  z-index: 2;
 }
 
-.page-header h1 {
-  font-size: clamp(2rem, 6vw, 3.5rem);
+/* Hobby Icon */
+.hobby-icon {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Hobby Title */
+.hobby-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
   background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.page-header p {
-  font-size: clamp(1rem, 3vw, 1.25rem);
-  color: #cbd5e1;
-  font-weight: 300;
-}
-
-/* Hobbies Container */
-.hobbies-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 1rem;
-}
-
-/* Hobby Cards */
-.hobby-card {
-  background: #1e293b;
-  border-radius: 1rem;
-  padding: 2rem;
-  border: 1px solid #334155;
-  transition: all 0.3s ease;
-  animation: slideIn 0.5s ease-out forwards;
-  opacity: 0;
-}
-
-.hobby-card:nth-child(1) { animation-delay: 0.1s; }
-.hobby-card:nth-child(2) { animation-delay: 0.2s; }
-.hobby-card:nth-child(3) { animation-delay: 0.3s; }
-
-.hobby-card:hover {
-  transform: translateY(-8px);
-  border-color: #60a5fa;
-  box-shadow: 0 12px 24px rgba(96, 165, 250, 0.15);
-  background: #1e293b;
-}
-
-/* Hobby Icon */
-.hobby-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.hobby-card:hover .hobby-icon {
-  transform: scale(1.1);
-}
-
-/* Hobby Title */
-.hobby-title {
-  font-size: 1.75rem;
-  font-weight: 600;
+/* Hobby Text */
+.hobby-text p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.8;
+  color: #e2e8f0;
   margin-bottom: 1rem;
-  color: #f1f5f9;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 0.5rem;
 }
 
-.hobby-title::after {
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  animation: fadeInUp 1s ease-out 0.5s both;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 2;
+}
+
+.scroll-indicator:hover {
+  color: #60a5fa;
+}
+
+.scroll-arrow {
+  width: 20px;
+  height: 20px;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* Background Colors for Each Section */
+.section-gaming {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  position: relative;
+}
+
+.section-gaming::before {
+  content: '🎮';
+  position: absolute;
+  font-size: 20rem;
+  opacity: 0.03;
+  bottom: -5rem;
+  right: -5rem;
+  pointer-events: none;
+}
+
+.section-fitness {
+  background: linear-gradient(135deg, #0f172a 0%, #1a2e1a 100%);
+  position: relative;
+}
+
+.section-fitness::before {
+  content: '🏋️';
+  position: absolute;
+  font-size: 20rem;
+  opacity: 0.03;
+  bottom: -5rem;
+  right: -5rem;
+  pointer-events: none;
+}
+
+.section-learning {
+  background: linear-gradient(135deg, #0f172a 0%, #1e2a3a 100%);
+  position: relative;
+}
+
+.section-learning::before {
+  content: '📚';
+  position: absolute;
+  font-size: 20rem;
+  opacity: 0.03;
+  bottom: -5rem;
+  right: -5rem;
+  pointer-events: none;
+}
+
+/* Optional: Add a subtle gradient overlay */
+.hobby-section::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  width: 40px;
-  height: 3px;
-  background: linear-gradient(90deg, #60a5fa, #a78bfa);
-  border-radius: 3px;
-  transition: width 0.3s ease;
-}
-
-.hobby-card:hover .hobby-title::after {
-  width: 80px;
-}
-
-/* Hobby Content */
-.hobby-content {
-  margin-top: 1.5rem;
-}
-
-.hobby-text {
-  color: #cbd5e1;
-  line-height: 1.7;
-  font-size: 1rem;
-  margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hobbies-page {
-    padding: 1rem;
-  }
-
-  .page-header {
-    margin: 0 0 2rem 0;
-  }
-
-  .hobbies-container {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0.5rem;
-  }
-
-  .hobby-card {
-    padding: 1.5rem;
-  }
-
-  .hobby-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .hobby-title {
-    font-size: 1.5rem;
-  }
-
-  .hobby-text {
-    font-size: 0.9375rem;
-    line-height: 1.6;
-  }
-}
-
-/* Small devices (phones) */
-@media (max-width: 480px) {
-  .hobbies-page {
-    padding: 0.75rem;
-  }
-
-  .page-header h1 {
-    font-size: 1.75rem;
-  }
-
-  .page-header p {
-    font-size: 0.875rem;
-  }
-
-  .hobby-card {
-    padding: 1.25rem;
-  }
-
-  .hobby-icon {
-    font-size: 2rem;
-  }
-
-  .hobby-title {
-    font-size: 1.25rem;
-  }
-
-  .hobby-text {
-    font-size: 0.875rem;
-  }
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
 }
 
 /* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -201,35 +163,85 @@
   }
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
+@keyframes bounce {
+  0%, 100% {
     transform: translateY(0);
   }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
-/* Optional: Add a subtle gradient border effect */
-.hobby-card {
-  position: relative;
-  overflow: hidden;
+/* Hide scroll indicator on last section */
+.hobby-section:last-child .scroll-indicator {
+  display: none;
 }
 
-.hobby-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #60a5fa, #a78bfa, #60a5fa);
-  transform: translateX(-100%);
-  transition: transform 0.6s ease;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-content {
+    padding: 1.5rem;
+  }
+
+  .hobby-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .scroll-indicator {
+    bottom: 1.5rem;
+  }
+
+  .scroll-arrow {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hobby-section::before {
+    font-size: 12rem;
+    bottom: -3rem;
+    right: -3rem;
+  }
 }
 
-.hobby-card:hover::before {
-  transform: translateX(0);
+@media (max-width: 480px) {
+  .hobby-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .scroll-indicator span {
+    font-size: 0.75rem;
+  }
+
+  .scroll-indicator {
+    bottom: 1rem;
+  }
+
+  .hobby-section::before {
+    font-size: 8rem;
+  }
+}
+
+/* Optional: Custom scrollbar */
+.hobbies-page::-webkit-scrollbar {
+  width: 8px;
+}
+
+.hobbies-page::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.hobbies-page::-webkit-scrollbar-thumb {
+  background: #60a5fa;
+  border-radius: 4px;
+}
+
+.hobbies-page::-webkit-scrollbar-thumb:hover {
+  background: #a78bfa;
+}
+
+/* Smooth transitions */
+.hobby-section {
+  transition: background 0.3s ease;
 }
