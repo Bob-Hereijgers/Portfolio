@@ -30,9 +30,6 @@ const Bar: React.FC<BarProps> = () => {
               <NavLink className="nav-text" to="Skills">
                 Skills
               </NavLink>
-              <NavLink className="nav-text" to="Contact">
-                Contact Me
-              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

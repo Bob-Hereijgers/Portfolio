@@ -33,11 +33,6 @@ const App = () => {
           element: <HobbiesPage />,
         },
         {
-          path: "contact",
-          element: <ContactPage />,
-        },
-
-        {
           path: "*",
           element: <PageNotFound />,
         },

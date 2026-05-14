@@ -8,15 +8,50 @@ const Homepage: React.FC = () => {
         <div className="hero-content">
           <h1 className="hero-title">Quinn Hereijgers</h1>
           <p className="hero-subtitle">Software Developer</p>
-          <p className="hero-description">
-Hi! I'm Quinn (legal name Bob). I'm a software developer who fell in love with coding because it combines creativity, logic, and problem-solving—three things I genuinely enjoy.
-<br/>
-I recently graduated with a degree in Programming and completed an internship at Mediahuis nv, where I built internal documentation tools and AI evaluation platforms. When I'm not coding, you'll find me gaming, working out, or reading about emerging technologies.
-<br/>
-This site showcases my skills, professional journey, projects, and personal interests. I'm always looking to connect with people who share a passion for technology and continuous growth.
-<br/>
-Feel free to reach out, I'd love to chat about tech, collaborate on projects, or just say hello!
-</p>
+ {/* Introduction */}
+  <div className="bio-section">
+    <p className="hero-description">
+      Hi! I'm Quinn (legal name Bob). I'm a software developer who fell in love with coding 
+      because it combines creativity, logic, and problem-solving—three things I genuinely enjoy.
+    </p>
+  </div>
+
+  {/* Background */}
+  <div className="bio-section">
+    <p className="hero-description">
+      I recently graduated with a degree in Programming and completed an internship at 
+      Mediahuis nv, where I built internal documentation tools and AI evaluation platforms.
+    </p>
+  </div>
+
+  {/* Current Project */}
+  <div className="bio-section project-highlight">
+    <p className="hero-description">
+      <span className="project-badge">🎮 Current Project</span>
+      I'm developing a unique game that blends the strategic chaos of board games like 
+      Monopoly and Mario Party with intricate turn-based battles inspired by Final Fantasy X 
+      and Clair Obscur: Expedition 33. It's a passion project that combines my love for game 
+      design with complex systems programming.
+    </p>
+  </div>
+
+  {/* Hobbies */}
+  <div className="bio-section">
+    <p className="hero-description">
+      When I'm not coding, you'll find me immersed in all kinds of hobbies, whether it's 
+      exploring rich narratives in video games, rolling dice in TTRPG sessions, adding to 
+      my growing collection of trinkets, or diving into whatever new interest has caught 
+      my attention this week. I love trying new things and always have a few projects on the go.
+    </p>
+  </div>
+
+  {/* Call to Action */}
+  <div className="bio-section">
+    <p className="hero-description">
+      This site showcases my skills, professional journey, projects, and personal interests. 
+      I'm always looking to connect with people who share a passion for technology and continuous growth.
+    </p>
+  </div>
           <div className="hero-cta">
             <a href="experiences" className="btn btn-secondary">View My Work</a>
             <a href="https://www.linkedin.com/in/bob-hereijgers" className="btn btn-secondary">Get In Touch</a>
