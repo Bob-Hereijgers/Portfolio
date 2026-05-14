@@ -27,7 +27,7 @@ const HobbiesPage: React.FC = () => {
       <section className="hobby-section section-pathfinder">
         <div className="section-overlay-pathfinder"></div>
         <div className="section-content">
-          <div className="hobby-icon">📜✒️</div>
+          <div className="hobby-icon">✒️</div>
           <h2 className="hobby-title">Pathfinder 2e</h2>
           <div className="hobby-text">
             <p>
@@ -49,7 +49,7 @@ const HobbiesPage: React.FC = () => {
       <section className="hobby-section section-collecting">
         <div className="section-overlay-collecting"></div>
         <div className="section-content">
-          <div className="hobby-icon">✨🗿</div>
+          <div className="hobby-icon">🗿</div>
           <h2 className="hobby-title">Collecting Trinkets</h2>
           <div className="hobby-text">
             <p>

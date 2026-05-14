@@ -24,7 +24,7 @@ Feel free to reach out, I'd love to chat about tech, collaborate on projects, or
         </div>
       </section>
 
-      <section className="quick-stats">
+     {/*  <section className="quick-stats">
         <div className="stat-card">
           <h3>2+</h3>
           <p>Years Experience</p>
@@ -37,7 +37,7 @@ Feel free to reach out, I'd love to chat about tech, collaborate on projects, or
           <h3>3</h3>
           <p>Languages</p>
         </div>
-      </section>
+      </section> --/> */}
 
       <section className="highlights">
         <h2>Key Highlights</h2>
