@@ -54,7 +54,7 @@ const HobbiesPage: React.FC = () => {
           <div className="hobby-text">
             <p>
               I love collecting weird little things, especially ones with emotional value. 
-              Most of my trinkets come from games, movies, and shows—little pieces of 
+              Most of my trinkets come from games, movies, and shows. Little pieces of 
               fictional worlds that I can hold in my hands.
             </p>
             <p>
