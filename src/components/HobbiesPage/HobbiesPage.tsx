@@ -8,7 +8,7 @@ const HobbiesPage: React.FC = () => {
       <section className="hobby-section section-gaming">
         <div className="section-overlay"></div>
         <div className="section-content">
-          <div className="hobby-icon">🎮</div>
+          <div className="hobby-icon">⚔️</div>
           <h2 className="hobby-title">Xenoblade Chronicles</h2>
           <div className="hobby-text">
             <p>
