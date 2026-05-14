@@ -12,7 +12,7 @@ const Homepage: React.FC = () => {
   <div className="bio-section">
     <p className="hero-description">
       Hi! I'm Quinn (legal name Bob). I'm a software developer who fell in love with coding 
-      because it combines creativity, logic, and problem-solving—three things I genuinely enjoy.
+      because it combines creativity, logic, and problem-solving. Three things I genuinely enjoy.
     </p>
   </div>
 
