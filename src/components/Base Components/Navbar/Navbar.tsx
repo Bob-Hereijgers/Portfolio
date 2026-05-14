@@ -24,11 +24,11 @@ const Bar: React.FC<BarProps> = () => {
               <NavLink className="nav-text" to="Experiences">
                 Experiences
               </NavLink>
-              <NavLink className="nav-text" to="Hobbies">
-                Hobbies
-              </NavLink>
               <NavLink className="nav-text" to="Skills">
                 Skills
+              </NavLink>
+              <NavLink className="nav-text" to="Hobbies">
+                Hobbies
               </NavLink>
             </Nav>
           </Navbar.Collapse>
