@@ -51,18 +51,6 @@ const ExperiencePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="experience-item">
-            <div className="timeline-marker"></div>
-            <div className="item-content">
-              <div className="item-header">
-                <h3>Job-student</h3>
-                <span className="date">Jul. - Aug. 2023</span>
-              </div>
-              <p className="company">BOB HEREIJGERS - SOFTWARE DEVELOPER</p>
-            </div>
-          </div>
-        </div>
-
         {/* Education */}
         <div className="section-group">
           <h2 className="section-title">Education</h2>
