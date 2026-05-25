@@ -50,6 +50,7 @@ const ExperiencePage: React.FC = () => {
               <p className="company">Mourik</p>
             </div>
           </div>
+                    </div>
 
         {/* Education */}
         <div className="section-group">
