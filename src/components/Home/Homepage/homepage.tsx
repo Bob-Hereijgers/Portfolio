@@ -27,10 +27,9 @@ const Homepage: React.FC = () => {
   {/* Current Project */}
   <div className="bio-section project-highlight">
     <p className="hero-description">
-      I'm currently developing a unique game that blends the strategic chaos of board games like 
-      Monopoly and Mario Party with intricate turn-based battles inspired by Final Fantasy X 
-      and Clair Obscur: Expedition 33. It's a passion project that combines my love for game 
-      design with complex systems programming.
+      I'm currently developing a game that blends the economic chaos of (board) games like 
+      Monopoly and Mario Party with intricate and strategic turn-based battles inspired by Final Fantasy X 
+      and Clair Obscur: Expedition 33. It's a passion project that smashes together my love for weird and unconvential games with complex interconnected systems and strategic depth.
     </p>
   </div>
 
