@@ -36,7 +36,18 @@ const ExperiencePage: React.FC = () => {
                 <h3>Job-student</h3>
                 <span className="date">Aug. 2024</span>
               </div>
-              <p className="company">Concordia - Café t'Heuvelzicht</p>
+              <p className="company">Concordia</p>
+            </div>
+          </div>
+
+          <div className="experience-item">
+            <div className="timeline-marker"></div>
+            <div className="item-content">
+              <div className="item-header">
+                <h3>Job-student</h3>
+                <span className="date">April 2024 - Januari 2025</span>
+              </div>
+              <p className="company">Concordia</p>
             </div>
           </div>
 
