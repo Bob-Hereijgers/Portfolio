@@ -47,7 +47,7 @@ const ExperiencePage: React.FC = () => {
                 <h3>Job-student</h3>
                 <span className="date">April 2024 - Januari 2025</span>
               </div>
-              <p className="company">Concordia</p>
+              <p className="company">Café t'Heuvelzicht</p>
             </div>
           </div>
 
