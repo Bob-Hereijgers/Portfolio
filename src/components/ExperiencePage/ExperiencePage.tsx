@@ -56,7 +56,7 @@ const ExperiencePage: React.FC = () => {
             <div className="item-content">
               <div className="item-header">
                 <h3>Job-student</h3>
-                <span className="date">2023 - 2024</span>
+                <span className="date">Aug. 2023</span>
               </div>
               <p className="company">Mourik</p>
             </div>
